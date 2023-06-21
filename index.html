@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html>
 <script type = "text/javascript">
-function myfunction() {
-  window.ShipbaesongEvent.onSignup("deleo://shipbaesong/c");
+function myfunction(newState) {
+  window.GoodsConfirmModule.onEdit(newState);
 }
 
 function myfunction2() {
-  window.ShipbaesongEvent.onSignup("deleo://shipbaesong/d?p1=1");
+  window.GoodsConfirmModule.onComplete();
 }
 </script>
 <head>
-  <title>미인증 제품은 판매하면 안 돼요!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
+    <title>미인증 제품은 판매하면 안 돼요!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
   	maximum-scale=1.0, minimum-scale=1.0"/>
 </head>
 <body>
 <!--url https://megadeth10.github.io/c2cmarket -->
-<!--<a href="windows.aaa.aaa()">로그인</a> <br/>-->
-<input type = "button" onclick = "myfunction()" value = "회원 가입"><br/>
-<!--<a href="deleo://shipbaesong/a">로그인</a>-->
-<img src="./image/image1.jpeg" width="100%"/>
-
-<input type = "button" onclick = "myfunction2()" value = "배송 신청"><br/>
-<!--		<img src="https://drive.google.com/uc?export=view&id=1aa2kWV5s5X6swclIQJkyvlOO7d8KWcFz" width="100%"/>-->
-<!--		<img src="https://drive.google.com/uc?export=view&id=1DXXOwpt-91ledMwfi0l_ZXUI5wIe3Pt-" width="100%"/>-->
-<!--		<img src="https://drive.google.com/uc?export=view&id=189RFWKSpYAPKqT6Af_Bne1kDTBzq4EkG" width="100%"/>-->
-<!--		<img src="https://drive.google.com/uc?export=view&id=1m4coX3F0s5ZW9IXU6DwgTcUtHr8k9MGV" width="100%"/>-->
-<!--		<img src="https://drive.google.com/uc?export=view&id=1aAZvyw5KHikRrtfF_zFeIU4vY9OVBYSm" width="100%"/>-->
-<!--		<img src="https://drive.google.com/uc?export=view&id=1l4gxfYuFoxZev1BIZDxl1wV60aZvYS7W" width="100%"/>-->
-<!--		<img src="https://drive.google.com/uc?export=view&id=1088kVh6sp7WMtLnMV0EeER2x2gizU0jo" width="100%"/>     -->
+<input type = "button" onclick = "myfunction(true)" value = "타이틀변경(true)"><br/>
+<input type = "button" onclick = "myfunction(false)" value = "타이틀변경(false)"><br/>
+<input type = "button" onclick = "myfunction2()" value = "완료"><br/>
 </body>
 </html>
