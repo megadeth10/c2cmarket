@@ -8,6 +8,9 @@ function myfunction(newState) {
 function myfunction2() {
   window.GoodsConfirmModule.onComplete();
 }
+function myfunction3() {
+  window.DeleoWMS.onDeepLink("deleo://wms/a");
+}
 </script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
@@ -19,5 +22,6 @@ function myfunction2() {
 <input type = "button" onclick = "myfunction(true)" value = "타이틀변경(true)"><br/>
 <input type = "button" onclick = "myfunction(false)" value = "타이틀변경(false)"><br/>
 <input type = "button" onclick = "myfunction2()" value = "완료"><br/>
+<input type = "button" onclick = "myfunction3()" value = "바코드 액션"><br/>
 </body>
 </html>
