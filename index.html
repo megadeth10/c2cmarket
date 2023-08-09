@@ -8,8 +8,10 @@ function myfunction(newState) {
 function myfunction2() {
   window.GoodsConfirmModule.onComplete();
 }
+
 function myfunction3() {
-  window.DeleoWMS.onDeepLink("deleo://wms/a");
+  var text = "deleo://wms/a"
+  window.DeleoWMS.onDeepLink(text);
 }
 </script>
 <head>
