@@ -18,6 +18,16 @@ function myfunction4() {
   var text = "deleo://wms/a"
   window.DeleoWMS.onDeepLink(text);
 }
+
+function myfunction5() {
+  var text = "deleo://shipbaesong/g"
+  window.ShipbaesongEvent.onDeepLink(text);
+}
+
+function myfunction6() {
+  var text = "deleo://shipbaesong/h/p1=%ED%95%99%EA%B5%90%EC%A2%85%EC%9D%B4%20%EB%95%A1%EB%95%A1%EB%95%A1"
+  window.ShipbaesongEvent.onDeepLink(text);
+}
 </script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
@@ -31,6 +41,8 @@ function myfunction4() {
 <input type = "button" onclick = "myfunction2()" value = "완료"><br/>
 <input type = "button" onclick = "myfunction3()" value = "바코드 액션"><br/>
 <input type = "text" value = "바코드 액션"><br/>
+<input type = "button" onclick = "myfunction5()" value = "계산기"><br/>
+<input type = "button" onclick = "myfunction6()" value = "복사"><br/>
 <a href="https://m.daum.net">다음이동</a>
 </body>
 </html>
