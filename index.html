@@ -28,6 +28,10 @@ function myfunction6() {
   var text = "deleo://shipbaesong/h?p1=%ED%95%99%EA%B5%90%EC%A2%85%EC%9D%B4%20%EB%95%A1%EB%95%A1%EB%95%A1"
   window.ShipbaesongEvent.onDeepLink(text);
 }
+
+function myfunction7() {
+  window.Toaster.postMessage("Toaster.postMessage");
+}
 </script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
@@ -36,6 +40,7 @@ function myfunction6() {
 <body>
 <!--url https://megadeth10.github.io/c2cmarket -->
 물품 확인 화면
+<input type = "button" onclick = "myfunction7()" value = "Toaster.postMessage"><br/>
 <input type = "button" onclick = "myfunction(true)" value = "타이틀변경(true)"><br/>
 <input type = "button" onclick = "myfunction(false)" value = "타이틀변경(false)"><br/>
 <input type = "button" onclick = "myfunction2()" value = "완료"><br/>
