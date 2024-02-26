@@ -32,6 +32,10 @@ function myfunction6() {
 function myfunction7() {
   window.Toaster.postMessage("Toaster.postMessage");
 }
+
+function myfunction8() {
+  window.ShipbaesongEvent.postMessage("ShipbaesongEvent.postMessage");
+}
 </script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
@@ -40,6 +44,7 @@ function myfunction7() {
 <body>
 <!--url https://megadeth10.github.io/c2cmarket -->
 물품 확인 화면
+<input type = "button" onclick = "myfunction8()" value = "ShipbaesongEvent.postMessage"><br/>
 <input type = "button" onclick = "myfunction7()" value = "Toaster.postMessage"><br/>
 <input type = "button" onclick = "myfunction(true)" value = "타이틀변경(true)"><br/>
 <input type = "button" onclick = "myfunction(false)" value = "타이틀변경(false)"><br/>
