@@ -36,6 +36,14 @@ function myfunction7() {
 function myfunction8() {
   window.ShipbaesongEvent.postMessage("ShipbaesongEvent.postMessage");
 }
+
+function myfunction9() {
+  toApp.postMessge("ShipbaesongEvent.postMessage");
+}
+
+function myfunction10() {
+  toApp2.postMessge("ShipbaesongEvent.postMessage", "result2");
+}
 </script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
@@ -54,5 +62,8 @@ function myfunction8() {
 <input type = "button" onclick = "myfunction5()" value = "계산기"><br/>
 <input type = "button" onclick = "myfunction6()" value = "복사"><br/>
 <a href="https://m.daum.net">다음이동</a>
+
+<input type = "button" onclick = "myfunction9()" value = "flutter(toApp) 호출"><br/>
+<input type = "button" onclick = "myfunction10()" value = "flutter(toApp2) 호출"><br/>
 </body>
 </html>
