@@ -44,6 +44,14 @@ function myfunction9() {
 function myfunction10() {
   window.toApp2.postMessage("ShipbaesongEvent.postMessage", "result2");
 }
+
+function myfunction11() {
+  window.ShipbaesongButtonEvent.postMessage("back");
+}
+
+function myfunction12() {
+  window.ShipbaesongButtonEvent.postMessage("home");
+}
 </script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
@@ -51,6 +59,9 @@ function myfunction10() {
 </head>
 <body>
 <!--url https://megadeth10.github.io/c2cmarket -->
+
+<input type = "button" onclick = "myfunction11()" value = "이전화면"><br/>
+<input type = "button" onclick = "myfunction12()" value = "홈 화면"><br/>
 물품 확인 화면
 <input type = "button" onclick = "myfunction8()" value = "ShipbaesongEvent.postMessage"><br/>
 <input type = "button" onclick = "myfunction7()" value = "Toaster.postMessage"><br/>
