@@ -57,14 +57,14 @@ function call_deeplink() {
     var inputElement = document.getElementById("deeplink_input");
 
     // 입력된 값(value)을 가져와서 표시
-    var inputValue = inputElement.value + "://";
+    var inputValue = inputElement.value; // + "://";
     inputElement.value = "";
 
-    if (/android/i.test(navigator.userAgent)) {
-        inputValue = inputValue + "flutter"
-    } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        inputValue = inputValue + "flutter"
-    }
+<!--    if (/android/i.test(navigator.userAgent)) {-->
+<!--        inputValue = inputValue + "flutter"-->
+<!--    } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {-->
+<!--        inputValue = inputValue + "flutter"-->
+<!--    }-->
     console.log("입력한 값:", inputValue);
     window.location.href = inputValue;
 }
