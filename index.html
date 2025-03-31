@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <script type = "text/javascript">
 function myfunction(newState) {
   window.GoodsConfirmModule.onEdit(newState);
@@ -53,14 +53,30 @@ function myfunction12() {
   window.ShipbaesongButtonEvent.postMessage("home");
 }
 
+function call_deeplink() {
+    var inputElement = document.getElementById("deeplink_input");
+
+    // 입력된 값(value)을 가져와서 표시
+    var inputValue = inputElement.value + "://";
+    inputElement.value = "";
+    window.location.href = inputValue + "://";
+    console.log("입력한 값:", inputValue);
+}
+
 </script>
 <head>
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
   	maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>딥링크 테스트</title>
 </head>
 <body>
 <!--url https://megadeth10.github.io/c2cmarket -->
-<a href="deleo://shipbaesong/i?p1=133">이벤트 상세 딥링크</a>
+<label for="deeplink_input">딥링크 입력<input id = "deeplink_input"/></label>
+<input type="button" onclick="call_deeplink()" value="딥링크 호출"/><br/>
+<a href="deeplink://">deeplink 호출</a><br/>
+<br/>
+<a href="deleo://shipbaesong/i?p1=133">이벤트 상세 딥링크</a><br/>
 <input type = "button" onclick = "myfunction11()" value = "이전화면"><br/>
 <input type = "button" onclick = "myfunction12()" value = "홈 화면"><br/>
 물품 확인 화면
@@ -70,7 +86,7 @@ function myfunction12() {
 <input type = "button" onclick = "myfunction(false)" value = "타이틀변경(false)"><br/>
 <input type = "button" onclick = "myfunction2()" value = "완료"><br/>
 <input type = "button" onclick = "myfunction3()" value = "바코드 액션"><br/>
-<input type = "text" value = "바코드 액션"><br/>
+<input type = "text" value = "바코드 액션"/><br/>
 <input type = "button" onclick = "myfunction5()" value = "계산기"><br/>
 <input type = "button" onclick = "myfunction6()" value = "복사"><br/>
 <a href="https://m.daum.net">다음이동</a>
