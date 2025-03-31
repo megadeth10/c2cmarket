@@ -60,6 +60,11 @@ function call_deeplink() {
     var inputValue = inputElement.value + "://";
     inputElement.value = "";
 
+    if (/android/i.test(navigator.userAgent)) {
+        inputValue = inputValue + "flutter"
+    } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        inputValue = inputValue + "flutter"
+    }
     console.log("입력한 값:", inputValue);
     window.location.href = inputValue;
 }
