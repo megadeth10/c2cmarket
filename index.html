@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <script type = "text/javascript">
-function myfunction7() {
+function postMessage() {
   window.Toaster.postMessage("Toaster.postMessage");
 }
 
@@ -34,10 +34,13 @@ function call_deeplink() {
 <input type="button" onclick="call_deeplink()" value="딥링크 호출"/><br/>
 dondeath://aaa <a href="dondeath://aaa">deeplink 호출</a><br/>
 <br/>
-
-<input type = "button" onclick = "myfunction7()" value = "Toaster.postMessage"><br/>
-<input type = "button" onclick = "myfunction2()" value = "완료"><br/>
-<input type = "text" value = "바코드 액션"/><br/>
-<a href="https://m.daum.net">Daum 웹이동</a>
+<label>
+    <input type = "text" value = "바코드 액션"/>
+</label>
+<br/>
+<a href="https://m.daum.net">Daum 웹이동</a><br/>
+<br/>
+Flutter 테스트<br/>
+<input type = "button" onclick = "postMessage()" value = "Toaster.postMessage"><br/>
 </body>
 </html>
