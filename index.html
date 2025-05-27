@@ -2,7 +2,10 @@
 <html lang="en">
 <script type = "text/javascript">
 function postMessage() {
-  window.Toaster.postMessage("Toaster.postMessage");
+    var inputElement = document.getElementById("script_msg");
+    var msg = `{"value": "${inputElement.value}"}`;
+    console.log("전달하려는 json 인자", msg);
+    Toaster.postMessage(msg);
 }
 
 function call_deeplink() {
@@ -41,6 +44,11 @@ dondeath://aaa <a href="dondeath://aaa">deeplink 호출</a><br/>
 <a href="https://m.daum.net">Daum 웹이동</a><br/>
 <br/>
 Flutter 테스트<br/>
-<input type = "button" onclick = "postMessage()" value = "Toaster.postMessage"><br/>
+<label>
+    Flutter Webview에 전달할 메시지를 인자로 전달한다.
+    <br/>
+    <input type = "text" value = "전달할 메시지" id="script_msg"/>
+    <input type = "button" onclick = "postMessage()" value = "Toaster.postMessage"><br/>
+</label>
 </body>
 </html>
